@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon quize</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="Q"><p>Q</p><span class="Count"></span></div>
+        <div class="slide">
+            <button class="move"></button>
+            <button class="move"></button>
+            <button class="move"></button>
+            <button class="move"></button>
+            <button class="move"></button>
+        </div>
+        <div class="que-container">
+            <p class="quetion">who is the prime minister of india?</p>
+        </div>
+        <div class="op-container">
+            <div class="option" onclick="selectOP(0),submitAns()">Virat kohli</div>
+            <div class="option" onclick="selectOP(1),submitAns()"></div>
+            <div class="option" onclick="selectOP(2),submitAns()"></div>
+            <div class="option" onclick="selectOP(3),submitAns()"></div>
+        </div>
+    </div>
+
+    <div class="result">
+        <p>Result</p>
+        <div class="emoji"></div>
+        <div class="Correct">Correct:</div>
+        <div class="Incorrect">Incorrect:</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
